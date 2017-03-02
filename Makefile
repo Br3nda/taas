@@ -19,5 +19,8 @@ fetch:	all
 update:	all
 	venv/bin/python bin/update.py
 
+docker:
+	docker build -f Dockerfile .
+
 clean:
 	rm -rf venv *.pyc .cache tests/__pycache__
